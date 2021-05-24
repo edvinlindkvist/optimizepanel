@@ -10,7 +10,8 @@ from tkinter import ttk
 import json
 import tkinter.font as tkFont
 from tkinter import LEFT
-
+import ctypes
+ctypes.CDLL(r"C:\Windows\System32\kernel32.dll")
 
 
 
@@ -508,7 +509,7 @@ menubar = Menu(window)
 filemenu = Menu(menubar, tearoff=0)
 
 filemenu.add_separator()
-filemenu.add_command(label="Exit", command=window.quit)
+filemenu.add_command(label="Exit", command=sys.exit)
 menubar.add_cascade(label="File", menu=filemenu)
 filemenu.add_separator()
 
