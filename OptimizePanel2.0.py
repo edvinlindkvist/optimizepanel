@@ -29,7 +29,7 @@ global fontsize
 
 
 # set the cwd to 'OptimizePanel2.0'
-os.chdir('OptimizePanel')
+#os.chdir('optimizepanel')
 
 with open('assets\\config.json') as json_file:
     data = json.load(json_file)
