@@ -1,0 +1,1 @@
+pyinstaller -y -w -i "C:/Git/optimizepanel/logo.ico" --add-data "C:/Git/optimizepanel/assets/config.json";"assets" --debug imports  "C:/Git/optimizepanel/OptimizePanel2.0.py"
